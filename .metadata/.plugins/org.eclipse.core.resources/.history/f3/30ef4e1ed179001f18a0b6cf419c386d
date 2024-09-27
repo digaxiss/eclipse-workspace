@@ -1,0 +1,28 @@
+package diadasemana;
+
+import javax.swing.JOptionPane;
+
+public class DiadaSemana {
+
+	private static final String Domingo, Segunda, Terça, Quarta, Quinta, Sexta, Sábado = null;
+
+	public static void main(String[] args) {
+		// Nomeando as variáveis
+		
+		String F1, N2, N3, N4, N5, N6, F2;
+		JOptionPane.showInputDialog("Digite em qual dia da semana estamos: ");
+		
+		// Declaração de valor constante
+		
+		F1 = Domingo;
+		N2 = Segunda;
+		N3 = Terça; 
+		N4 = Quarta; 
+		N5 = Quinta; 
+		N6 = Sexta;
+		F2 = Sábado;
+		
+
+	}
+
+}

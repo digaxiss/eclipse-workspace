@@ -1,0 +1,16 @@
+package diadasemana;
+
+import Javax.Swing.JOpitonPane; 
+
+public class DiadaSemana {
+
+	public static void main(String[] args) {
+		// Entrada
+		
+		String FDS1, Dia2, Dia3, Dia4, Dia5, Dia6, FDS2;
+		JOption.showInputDialog("Digite em qual dia da semana estamos: ");
+		
+
+	}
+
+}

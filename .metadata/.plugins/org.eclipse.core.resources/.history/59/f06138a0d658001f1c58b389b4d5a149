@@ -1,0 +1,27 @@
+package saudação;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		//Entrada
+		//Declaração de variável
+		String mensagem; 
+		int hora;
+		double altura;
+		//Procesamento  
+		mensagem = "Boa tarde!"; 
+		hora = 15;
+		altura = 1.67;
+	 
+		//saída 
+		
+		System.out.println(mensagem + " São quase " + hora + " horas da tarde. ");
+		System.out.println("Olá, minha altura é: " + altura ");
+		
+		//Entrada, processamento e saída
+		//System.out.println("Hello, World");
+		
+	}
+
+}

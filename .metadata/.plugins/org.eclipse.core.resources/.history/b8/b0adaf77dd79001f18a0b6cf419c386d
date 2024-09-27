@@ -1,0 +1,16 @@
+package diadasemana;
+
+public class diadasemanaSwithCase {
+
+	public static void main(String[] args) {
+		// Exemplo de variável
+		
+		int dia = 7;
+		
+		case 1: 
+		System.out.print("Segunda");
+		break; 
+
+	}
+
+}

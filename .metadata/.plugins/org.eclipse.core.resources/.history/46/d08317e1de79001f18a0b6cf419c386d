@@ -1,0 +1,15 @@
+package felicitação;
+
+public class Parabéns {
+
+	public static void main(String[] args) {
+		// Entrada
+		
+		String opc;
+		int iopc;
+		
+		
+
+	}
+
+}

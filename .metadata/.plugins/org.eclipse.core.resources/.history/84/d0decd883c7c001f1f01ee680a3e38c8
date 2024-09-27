@@ -1,0 +1,19 @@
+package felicitação;
+
+import javax.swing.JOptionPane;
+
+public class Felicitação {
+
+	public static void main(String[] args) {
+		// Entrada
+		
+		int dia1, dia2, mes1, mes2;
+		
+		dia1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o dia atual: "));
+		mes1 = Integer.parseInt(JOptionPane.showInputDialog("Digite em que mês estamos: "));
+		
+		dia2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o dia do seu aniverário: "));
+		mes2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o mês do seu aniversário: "));
+	}
+
+}

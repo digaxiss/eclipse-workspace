@@ -1,0 +1,30 @@
+package diadasemana;
+
+import javax.swing.JOptionPane; 
+
+public class DiadaSemanna {
+
+	public static void main(String[] args) {
+		// Entarada
+		
+		String DiaSemana;//, dom, seg, ter, qua, qui, sex, sab; 
+		int iDiaSemana;//,   idom, iseg, iter, iqua, iqui, isex, isab;
+		DiaSemana = JOptionPane.showInputDialog("Digite em qual dia da semana estamos: "
+				+ "1 - domingo"
+				+ "2 - segunda"
+				+ "3 - terça"
+				+ "4 - quarta"
+				+ "5 quinta"
+				+ "6 - sexta"
+				+ " 7 - sábado");
+		
+		iDiaSemana = Integer.parseInt(DiaSemana);
+		if (iDiaSemana == 1 || iDiaSemana == 7) {
+			JOptionPane.showMessageDialog(null, " Estamos em um FINAL DE SEMANA!" + DiaSemana);
+		}else if (iDiaSemana >= 2 && iDiaSemana <= 6 ) {
+			JOptionPane.showMessageDialog(null, " Estamos em um DIA ÚTIL!" + DiaSemana);
+			
+		}
+	}
+
+}

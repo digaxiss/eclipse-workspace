@@ -1,0 +1,76 @@
+package felicitação;
+
+import javax.swing.JOptionPane;
+
+public class Parabéns {
+
+	public static void main(String[] args) {
+		// Declaração de variável
+		
+		String dia1, mes1, ano, mes2, dia2; // mes1 = mes atual. mes2 = mes do aniversário
+		
+		// Entrada
+		
+		dia2 = JOptionPane.showInputDialog("Digite em qual dia estamos: ");
+		mes1 = JOptionPane.showInputDialog("Digite o mês atual: \n"
+				+ "1 - janeiro\n"
+				+ "2 - fevereiro\n"
+				+ "3 - março\n"
+				+ "4 - abril\n"
+				+ "5 - maio\n"
+				+ "6 - junho\n"
+				+ "7 - julho\n"
+				+ "8 - agosto\n"
+				+ "9 - setembro\n"
+				+ "10 - outubro\n"
+				+ "11 - novembro\n"
+				+ "12 - dezembro\n");
+		
+		dia1 = JOptionPane.showInputDialog("Digite qual o dia que você nasceu: ");
+				
+		mes2 = JOptionPane.showInputDialog("Digite seu mês de nascimento: "
+					+ "1 - janeiro\n"
+					+ "2 - fevereiro\n"
+					+ "3 - março\n"
+					+ "4 - abril\n"
+					+ "5 - maio\n"
+					+ "6 - junho\n"
+					+ "7 - julho\n"
+					+ "8 - agosto\n"
+					+ "9 - setembro\n"
+					+ "10 - outubro\n"
+					+ "11 - novembro\n"
+					+ "12 - dezembro\n");
+		
+		if(mes1 == mes2 && dia2 == dia1)  {
+			JOptionPane.showMessageDialog(null, "MEUS PARABÉNS, É O MÊS DO SEU ANIVERSÁRIO!");
+	
+		}else if(dia2 > dia1 && mes2 > mes1) { 
+			JOptionPane.showMessageDialog(null, "Seu aniversário ainda não chegou! ");
+			
+		}else if (dia2 < dia1 && mes2 < mes1) {
+			JOptionPane.showMessageDialog(null, "Seu aniversário está chegando! ");
+		
+		}
+	}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		 {
+		
+		
+		
+		
+		
+		
+		
+		 }
+	}
+
+}

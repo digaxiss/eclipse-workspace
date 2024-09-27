@@ -1,0 +1,82 @@
+package felicitação;
+
+import javax.swing.JOptionPane;
+
+public class Parabéns {
+
+	public static void main(String[] args) {
+		// Declaração de variável
+		
+		String dia, mes, ano, nome;
+		
+		// Entrada
+		
+		dia = JOptionPane.showInputDialog("Digite qual o dia que você nasceu: "
+				+ "1"
+				+ "2" 
+				+ "3" 
+				+ "4" 
+				+ "5" 
+				+ "6" 
+				+ "7" 
+				+ "8" 
+				+ "9" 
+				+ "10"
+				+ "11" 
+				+ "12"
+				+ "13"
+				+ "14"
+				+ "15"
+				+ "16"
+				+ "17"
+				+ "18"
+				+ "19"
+				+ "20"
+				+ "21"
+				+ "22"
+				+ "23"
+				+ "24"
+				+ "25"
+				+ "26"
+				+ "27"
+				+ "28"
+				+ "29"
+				+ "30"
+				+ "31");
+		
+		
+		mes = JOptionPane.showInputDialog("Digite seu mês de nascimento: "
+					+ "1 - janeiro"
+					+ "2 - fevereiro"
+					+ "3 - março"
+					+ "4 - abril"
+					+ "5 - maio"
+					+ "6 - junho"
+					+ "7 - julho"
+					+ "8 - agosto"
+					+ "9 - setembro"
+					+ "10 - outubro"
+					+ "11 - novembro"
+					+ "12 - dezembro");
+		
+		ano = JOptionPane.showInputDialog("Digite seu ano de nascimento: ");
+		
+		
+		
+		
+		
+		
+		
+		
+		 {
+		
+		
+		
+		
+		
+		
+		
+		 }
+	}
+
+}

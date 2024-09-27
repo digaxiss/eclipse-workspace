@@ -1,0 +1,74 @@
+package diadasemana;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.time.LocalDate;
+
+class Aniversariante {
+    String nome;
+    LocalDate dataNascimento;
+
+    public Aniversariante(String nome, LocalDate dataNascimento) {
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+    }
+}
+
+public class SistemaAniversarios {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        List<Aniversariante> aniversariantes = new ArrayList<>();
+
+        System.out.print("Quantos aniversariantes você deseja adicionar? ");
+        int numeroDeAniversariantes = scanner.nextInt();
+        scanner.nextLine(); // Limpa o buffer
+
+        for (int i = 0; i < numeroDeAniversariantes; i++) {
+            System.out.print("Digite o nome do aniversariante: ");
+            String nome = scanner.nextLine();
+            System.out.print("Digite a data de nascimento (DD/MM/AAAA): ");
+            String dataNascimentoStr = scanner.nextLine();
+
+            // Converte a data de nascimento
+            String[] partes = dataNascimentoStr.split("/");
+            LocalDate dataNascimento = LocalDate.of(
+                Integer.parseInt(partes[2]), // Ano
+                Integer.parseInt(partes[1]), // Mês
+                Integer.parseInt(partes[0])  // Dia
+            );
+
+            aniversariantes.add(new Aniversariante(nome, dataNascimento));
+        }
+
+        // Obtém o mês atual
+        int mesAtual = LocalDate.now().getMonthValue();
+
+        // Exibe as mensagens de feliz aniversário
+        System.out.println("\nMensagens de aniversário:");
+        for (Aniversariante aniversariante : aniversariantes) {
+            switch (aniversariante.dataNascimento.getMonthValue()) {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                    if (aniversariante.dataNascimento.getMonthValue() == mesAtual) {
+                        System.out.println("Feliz aniversário, " + aniversariante.nome + "! Que seu mês seja cheio de alegrias!");
+                    }
+                    break;
+                default:
+                    System.out.println("Mês inválido para " + aniversariante.nome);
+                    break;
+            }
+        }
+
+        scanner.close();
+    }
+}

@@ -1,0 +1,24 @@
+package felicitação;
+
+import javax.swing.JOptionPane;
+
+public class Parabéns {
+
+	public static void main(String[] args) {
+		// Declaração de variável
+		
+		String opc;
+		int iopc;
+		
+		// Entrada
+		
+		opc = JOptionPane.showInputDialog("Digite a sua data de nascimento: ");
+		
+		
+		
+		
+		
+
+	}
+
+}
